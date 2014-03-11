@@ -11,15 +11,11 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<audio id="audio1" src="sons/som1.ogg"></audio>
-		<audio id="audio2" src="sons/som2.ogg"></audio>
-		<audio id="audio3" src="sons/som3.ogg"></audio>
-		<audio id="audio4" src="sons/som4.ogg"></audio>
-		
+		<audio id="audio1" autobuffer><source src="sons/som1.ogg" type="audio/ogg" ></audio>
 		<div class="drum" onclick="play('audio1')"></div>
-		<div class="drum" onclick="play('audio2')"></div>
-		<div class="drum" onclick="play('audio3')"></div>
-		<div class="drum" onclick="play('audio4')"></div>
+		<div class="drum" onclick="play('audio2')"><audio id="audio2" src="sons/som2.ogg"></audio></div>
+		<div class="drum" onclick="play('audio3')"><audio id="audio3" src="sons/som3.ogg"></audio></div>
+		<div class="drum" onclick="play('audio4')"><audio id="audio4" src="sons/som4.ogg"></audio></div>
 	</body>
 	
 </html>
