@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<title>Sobe e Desce</title>
+	<title>Bateria</title>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,11 +11,10 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<audio id="audio1" autobuffer><source src="sons/som1.ogg" type="audio/ogg" ></audio>
-		<div class="drum" onclick="play('audio1')"></div>
-		<div class="drum" onclick="play('audio2')"><audio id="audio2" src="sons/som2.ogg"></audio></div>
-		<div class="drum" onclick="play('audio3')"><audio id="audio3" src="sons/som3.ogg"></audio></div>
-		<div class="drum" onclick="play('audio4')"><audio id="audio4" src="sons/som4.ogg"></audio></div>
+		<audio id="audio">
+			<source src="sons/som4.ogg" type="audio/ogg">
+		</audio>
+		<img src="imgs/drum.png" onclick="document.getElementById('audio').play()">
 	</body>
-	
+
 </html>
